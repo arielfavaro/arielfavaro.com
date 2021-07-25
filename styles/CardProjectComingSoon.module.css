@@ -1,0 +1,11 @@
+.card {
+    @apply w-full max-w-md bg-dark-lighter rounded-lg flex space-x-4 p-4 items-center justify-center pointer-events-none;
+}
+
+.texts {
+    @apply text-gray-600;
+}
+
+.title {
+    @apply text-2xl font-bold;
+}
