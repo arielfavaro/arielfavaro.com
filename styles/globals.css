@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-    .container {
-        @apply mx-auto;
-    }
 }
 
 body {

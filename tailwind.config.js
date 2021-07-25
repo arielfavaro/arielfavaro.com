@@ -6,6 +6,12 @@ module.exports = {
         fontFamily: {
             'sans': ['Roboto', 'sans-serif'],
         },
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: '.75rem',
+            },
+        },
         extend: {
             colors: {
                 primary: {
