@@ -18,15 +18,15 @@ export default function Home() {
                 {/* <Link href="mailto:contato@arielfavaro.com">
                     <a target="_blank" className={styles.email}>contato@arielfavaro.com</a>
                 </Link> */}
-                <div className="flex gap-x-2 py-5">
+                <div className={styles.socialWrapper}>
                     <Link href="https://linkedin.com/in/arielfavaro">
-                        <a target="_blank" className="rounded p-3 bg-gray-700 hover:bg-gray-600 text-white text-2xl"><FaLinkedinIn /></a>
+                        <a target="_blank" className={styles.social}><FaLinkedinIn /></a>
                     </Link>
                     <Link href="https://github.com/arielfavaro">
-                        <a target="_blank" className="rounded p-3 bg-gray-700 hover:bg-gray-600 text-white text-2xl"><FaGithub /></a>
+                        <a target="_blank" className={styles.social}><FaGithub /></a>
                     </Link>
                     <Link href="mailto:contato@arielfavaro.com">
-                        <a target="_blank" className="rounded p-3 bg-gray-700 hover:bg-gray-600 text-white text-2xl"><HiMail /></a>
+                        <a target="_blank" className={styles.social}><HiMail /></a>
                     </Link>
                 </div>
             </main>
