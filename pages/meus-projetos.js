@@ -16,12 +16,6 @@ export default function MeusProjetos() {
                 <h1 className="text-center text-5xl text-primary font-black">Meus Projetos</h1>
 
                 <div className="flex flex-wrap justify-center gap-4 py-8">
-                    <CardProject
-                        title="Gerador de Link para WhatsApp"
-                        description="Crie link curto para WhatsApp com QR Code de maneira fácil e compartilhe com seus clientes."
-                        link="https://geradorlinkwhatsapp.com/"
-                        icon="geradorlinkwhatsapp-icon.png"
-                    />
                     <CardProjectComingSoon />
                 </div>
             </section>
