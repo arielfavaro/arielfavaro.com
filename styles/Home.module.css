@@ -7,7 +7,8 @@
 }
 
 .description {
-    @apply text-white text-2xl text-center font-bold;
+    @apply text-white text-xl text-center font-bold my-2;
+    max-width: 420px;
 }
 
 .email {
