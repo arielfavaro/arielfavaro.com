@@ -1,7 +1,8 @@
 import styles from '@/styles/FloatingParticles.module.css'
-import Particles from 'react-particles-js'
+import Particles from 'react-tsparticles'
 
 const params = {
+    "fpsLimit": 60,
     "particles": {
         "number": {
             "value": 160,
@@ -10,22 +11,23 @@ const params = {
             }
         },
         "size": {
-            "value": 3,
+            "value": 4,
             "random": true,
-            "anim": {
-                "speed": 4,
-                "size_min": 0.3
-            }
-        },
-        "line_linked": {
-            "enable": false
         },
         "move": {
-            "random": true,
+            "enable" : true,
+            "random": false,
             "speed": 1,
             "direction": "top",
             "out_mode": "out"
-        }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": {
+                "enable": true,
+                "minimumValue": 0.2,
+            },
+        },
     },
     "interactivity": {
         "events": {
@@ -38,21 +40,9 @@ const params = {
                 "mode": "repulse"
             }
         },
-        "modes": {
-            "bubble": {
-                "distance": 250,
-                "duration": 2,
-                "size": 0,
-                "opacity": 0
-            },
-            "repulse": {
-                "distance": 400,
-                "duration": 4
-            }
-        }
     }
 }
 
 export default function FloatingParticles() {
-    return <Particles className={styles.floatingParticles} params={params} />
+    return <Particles className={styles.floatingParticles} options={params} />
 }
