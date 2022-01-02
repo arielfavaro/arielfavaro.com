@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
                 <link rel="apple-touch-icon" href="/icons/icon192.png"></link>
                 <meta name="theme-color" content="#d7282f" /> */}
             </Head>
-            {/* <Nav /> */}
+            <Nav />
             <Component {...pageProps} />
         </>
     )

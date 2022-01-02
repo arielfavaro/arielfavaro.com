@@ -18,6 +18,7 @@ export default function CardProject({ title, description, link, icon }) {
                     <div className={styles.texts}>
                         <h3 className={styles.title}>{title}</h3>
                         <p>{description}</p>
+                        <button className={styles.button}>Visitar</button>
                     </div>
                 </div>
             </a>

@@ -13,9 +13,15 @@ export default function MeusProjetos() {
             </Head>
             <FloatingParticles />
             <section className="container">
-                <h1 className="text-center text-5xl text-primary font-black">Meus Projetos</h1>
+                <h1 className="text-center text-5xl text-primary font-black mb-3">Meus Projetos</h1>
 
                 <div className="flex flex-wrap justify-center gap-4 py-8">
+                    <CardProject
+                        title="Gerador de Link para whats"
+                        description="Crie link curto para whats com QR Code de maneira fácil e compartilhe com seus clientes."
+                        link="https://app.linkwpp.com/"
+                        icon="geradorlinkwhatsapp-icon.png"
+                    />
                     <CardProjectComingSoon />
                 </div>
             </section>
