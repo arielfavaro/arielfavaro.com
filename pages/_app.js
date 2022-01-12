@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
                 <link key="canonical" rel="canonical" href="https://arielfavaro.com/" />
                 {/* <link rel="icon" href="/favicon.ico" /> */}
 
-                <title>Ari Dev - Desenvolvimento Web</title>
+                <title>Desenvolvedor Web - Ariel</title>
 
                 {/* <link rel="manifest" href="/manifest.json" />
 

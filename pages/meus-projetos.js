@@ -9,7 +9,7 @@ export default function MeusProjetos() {
     return (
         <div>
             <Head>
-                <title>Meus Projetos - Ari Dev</title>
+                <title>Meus Projetos - Desenvolvedor Web - Ariel</title>
             </Head>
             <FloatingParticles />
             <section className="container">

@@ -8,7 +8,7 @@ export default function Custom404() {
     return (
         <div>
             <Head>
-                <title>404 - Ari Dev</title>
+                <title>404</title>
             </Head>
             <FloatingParticles />
             <div className="flex flex-col items-center justify-center min-h-screen">
