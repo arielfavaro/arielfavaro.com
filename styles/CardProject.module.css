@@ -1,19 +1,19 @@
 .card {
-    @apply w-full max-w-md bg-dark-lighter border-2 border-transparent hover:border-primary rounded-lg flex space-x-4 p-4 items-center;
+    /* @apply w-full max-w-md bg-dark-lighter border-2 border-transparent hover:border-primary rounded-lg flex space-x-4 p-4 items-center; */
 }
 
 .imageWrapper {
-    @apply flex-shrink-0;
+    /* @apply flex-shrink-0; */
 }
 
 .texts {
-    @apply text-white;
+    /* @apply text-white; */
 }
 
 .title {
-    @apply text-xl font-bold;
+    /* @apply text-xl font-bold; */
 }
 
 .button {
-    @apply rounded p-3 mt-3 bg-gray-700 hover:bg-gray-600 text-white;
+    /* @apply rounded p-3 mt-3 bg-gray-700 hover:bg-gray-600 text-white; */
 }

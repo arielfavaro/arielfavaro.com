@@ -1,6 +1,9 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
+import { Button, ChakraProvider, useColorMode } from '@chakra-ui/react'
+import { theme } from '@/lib/theme'
 import Nav from '@/components/Nav'
+import ColorMode from '../components/ColorMode'
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -33,8 +36,11 @@ function MyApp({ Component, pageProps }) {
                 <link rel="apple-touch-icon" href="/icons/icon192.png"></link>
                 <meta name="theme-color" content="#d7282f" /> */}
             </Head>
-            <Nav />
-            <Component {...pageProps} />
+            <ChakraProvider theme={theme}>
+                <ColorMode />
+                <Nav />
+                <Component {...pageProps} />
+            </ChakraProvider>
         </>
     )
 }

@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { GA_TRACKING_ID } from '@/lib/analytics'
+import { ColorModeScript } from '@chakra-ui/react'
+import { theme } from '@/lib/theme'
 
 class MyDocument extends Document {
     // static async getInitialProps(ctx) {
@@ -28,6 +30,7 @@ class MyDocument extends Document {
 
                 </Head>
                 <body>
+                    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
                     <Main />
                     <NextScript />
                 </body>

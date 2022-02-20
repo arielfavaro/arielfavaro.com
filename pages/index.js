@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import dynamic from 'next/dynamic'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { HiMail } from "react-icons/hi"
+import { Button, useColorMode } from '@chakra-ui/react'
 
 const FloatingParticles = dynamic(() => import('@/components/FloatingParticles'))
 
