@@ -2,6 +2,7 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import CardProject from '@/components/CardProject'
 import CardProjectComingSoon from '@/components/CardProjectComingSoon'
+import ModalProjeto from '@/components/ModalProjeto'
 
 const FloatingParticles = dynamic(() => import('@/components/FloatingParticles'))
 
@@ -25,6 +26,7 @@ export default function MeusProjetos() {
                     <CardProjectComingSoon />
                 </div>
             </section>
+            <ModalProjeto projectTitle='Cerâmica Silveira' description='alou teste' />
         </div>
     )
 }
