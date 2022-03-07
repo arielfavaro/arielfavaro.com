@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+    ::-webkit-scrollbar,
+    html::-webkit-scrollbar {
+        @apply w-3;
+    }
+
+    ::-webkit-scrollbar-thumb,
+    html::-webkit-scrollbar-thumb {
+        @apply bg-primary border-2 border-solid border-dark-lighter rounded-xl;
+        /* border: 3px solid red; */
+    }
+
+    ::-webkit-scrollbar-track,
+    html::-webkit-scrollbar-track {
+        @apply bg-dark-lighter;
+    }
+}
+
 @layer components {
 }
 
