@@ -1,5 +1,6 @@
 .main {
-    @apply container flex flex-col justify-center items-center min-h-screen;
+    @apply container flex flex-col justify-center items-center;
+    min-height: calc(100vh - 4rem);
 }
 
 .mainTitle {
