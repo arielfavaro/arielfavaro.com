@@ -1,6 +1,9 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
 import Nav from '@/components/Nav'
+import dynamic from 'next/dynamic'
+
+const FloatingParticles = dynamic(() => import('@/components/FloatingParticles'))
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -33,6 +36,7 @@ function MyApp({ Component, pageProps }) {
                 <link rel="apple-touch-icon" href="/icons/icon192.png"></link>
                 <meta name="theme-color" content="#d7282f" /> */}
             </Head>
+            <FloatingParticles />
             <Nav />
             <Component {...pageProps} />
         </>

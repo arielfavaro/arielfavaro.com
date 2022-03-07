@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import CardProject from '@/components/CardProject'
 import CardProjectComingSoon from '@/components/CardProjectComingSoon'
-
-const FloatingParticles = dynamic(() => import('@/components/FloatingParticles'))
 
 export default function MeusProjetos() {
     return (
@@ -11,7 +8,6 @@ export default function MeusProjetos() {
             <Head>
                 <title>Meus Projetos - Desenvolvedor Web - Ariel</title>
             </Head>
-            <FloatingParticles />
             <section className="container">
                 <h1 className="text-center text-5xl text-primary font-black mb-3">Meus Projetos</h1>
 

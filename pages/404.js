@@ -1,8 +1,5 @@
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Link from 'next/link'
-
-const FloatingParticles = dynamic(() => import('@/components/FloatingParticles'))
 
 export default function Custom404() {
     return (
@@ -10,7 +7,6 @@ export default function Custom404() {
             <Head>
                 <title>404</title>
             </Head>
-            <FloatingParticles />
             <div className="flex flex-col items-center justify-center min-h-screen">
                 <h1 className="text-center text-5xl text-red-500 font-black">Ooops - 404</h1>
                 <h3 className="text-center font-extralight text-5xl text-red-500">Houston, we have a problem!</h3>
