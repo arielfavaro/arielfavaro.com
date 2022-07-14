@@ -16,7 +16,7 @@ export default function MeusProjetos() {
                         title="Gerador de Link para whats"
                         description="Crie link curto para whats com QR Code de maneira fácil e compartilhe com seus clientes."
                         link="https://app.linkwpp.com/"
-                        icon="geradorlinkwhatsapp-icon.png"
+                        icon="geradorlinkwhatsapp-icon.webp"
                     />
                     <CardProjectComingSoon />
                 </div>
