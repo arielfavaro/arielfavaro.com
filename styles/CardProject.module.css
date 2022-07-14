@@ -1,5 +1,5 @@
 .card {
-    @apply w-full max-w-md bg-dark-lighter border-2 border-transparent hover:border-primary rounded-lg flex space-x-4 p-4 items-center;
+    @apply w-full h-full max-w-md bg-dark-lighter border-2 border-transparent hover:border-primary rounded-lg flex space-x-4 p-4 items-center;
 }
 
 .imageWrapper {
