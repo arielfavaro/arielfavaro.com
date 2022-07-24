@@ -5,10 +5,37 @@ import { FaLinkedinIn, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { HiMail } from "react-icons/hi"
 import Image from 'next/image'
 import { contactInfo } from '@/lib/contactInfo'
+import generateCard from '@/services/generateCard'
+import QRCode from "qrcode"
+import { useRef, useState } from 'react'
 
 export default function Card({ avatar_url, bio }) {
 
     const whatsappMessageText = encodeURI('Olá, vim do cartão de visita')
+
+    const [isGeneratedQrCode, setIsGeneratedQrCode] = useState(false)
+
+    const canvasQrCodeRef = useRef()
+
+    const handleGenerateQrCode = () => {
+        if (isGeneratedQrCode) {
+            return;
+        }
+
+        const qrcode_options = {
+            errorCorrectionLevel: 'M',
+            type: 'image/png',
+            // quality: 0.3,
+            margin: 2,
+            width: 800,
+            // scale: 20,
+        }
+
+        const card = generateCard()
+        QRCode.toCanvas(canvasQrCodeRef.current, card, qrcode_options, error => { })
+        canvasQrCodeRef.current.style = {}
+        setIsGeneratedQrCode(true)
+    }
 
     return (
         <>
@@ -65,6 +92,20 @@ export default function Card({ avatar_url, bio }) {
                                 <FaGithub />
                             </a>
                         </Link>
+                    </div>
+                    <div className='flex flex-col justify-center items-center border-t py-4 gap-4'>
+                        <button className='rounded-full px-4 py-2 bg-gray-800 hover:bg-gray-600 text-white text-sm disabled:opacity-50 disabled:cursor-default'
+                            onClick={handleGenerateQrCode}
+                            disabled={isGeneratedQrCode}
+                        >
+                            Salvar Contato por QrCode
+                        </button>
+                        <div className='lg:w-80'>
+                            <canvas
+                                className={`max-w-full object-contain object-top ${isGeneratedQrCode ? '' : 'hidden'}`}
+                                ref={canvasQrCodeRef}>
+                            </canvas>
+                        </div>
                     </div>
                 </div>
             </main>
