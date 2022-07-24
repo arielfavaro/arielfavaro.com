@@ -9,7 +9,7 @@ import generateCard from '@/services/generateCard'
 import QRCode from "qrcode"
 import { useRef, useState } from 'react'
 
-export default function Card({ avatar_url, bio }) {
+export default function Card() {
 
     const whatsappMessageText = encodeURI('Olá, vim do cartão de visita')
 
@@ -46,14 +46,15 @@ export default function Card({ avatar_url, bio }) {
             </Head>
             <main className='container'>
                 <div className={styles.card}>
-                    <div className='flex justify-center'>
-                        <Image
-                            src={avatar_url}
-                            width={128}
-                            height={128}
-                            alt=''
-                            className='rounded-full'
-                        />
+                    <div className='flex justify-center -mt-14'>
+                        <div className='rounded-full w-32 h-32 overflow-hidden relative' style={{ boxShadow: '0 12px 32px rgb(253 223 167 / 25%)' }}>
+                            <Image
+                                src='/images/profile.webp'
+                                layout='fill'
+                                alt=''
+                                className=''
+                            />
+                        </div>
                     </div>
                     <div className='flex flex-col items-center justify-center py-2'>
                         <h2 className='text-xl font-bold'>Ariel Favaro</h2>
@@ -93,8 +94,8 @@ export default function Card({ avatar_url, bio }) {
                             </a>
                         </Link>
                     </div>
-                    <div className='flex flex-col justify-center items-center border-t py-4 gap-4'>
-                        <button className='rounded-full px-4 py-2 bg-gray-800 hover:bg-gray-600 text-white text-sm disabled:opacity-50 disabled:cursor-default'
+                    <div className='flex flex-col justify-center items-center border-t border-gray-500 py-4 gap-4'>
+                        <button className='rounded-full px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm disabled:opacity-50 disabled:cursor-default'
                             onClick={handleGenerateQrCode}
                             disabled={isGeneratedQrCode}
                         >
@@ -111,19 +112,4 @@ export default function Card({ avatar_url, bio }) {
             </main>
         </>
     )
-}
-
-export async function getStaticProps() {
-
-    const response = await fetch('https://api.github.com/users/arielfavaro')
-    const profileData = await response.json()
-
-    const { avatar_url, location, bio } = profileData
-
-    return {
-        props: {
-            avatar_url,
-            bio
-        }
-    }
 }
