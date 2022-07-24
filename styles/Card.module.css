@@ -1,0 +1,11 @@
+.card {
+    @apply max-w-lg p-4 mx-auto bg-gray-700 rounded-xl shadow-xl text-center text-white;
+}
+
+.socialWrapper {
+    @apply flex gap-4 flex-wrap justify-center py-4;
+}
+
+.social {
+    @apply rounded p-3 bg-gray-800 hover:bg-gray-600 text-white text-2xl;
+}
