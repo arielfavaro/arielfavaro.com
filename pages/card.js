@@ -38,9 +38,8 @@ export default function Card({ avatar_url, bio }) {
                             href='/api/card'
                             rel='nofollow'
                             className='bg-primary rounded-full px-4 py-2 hover:shadow-xl'
-                            // download='vcard.vcf'
                         >
-                            Salvar na Agenda
+                            Salvar Contato
                         </a>
                     </div>
                     <div className={styles.socialWrapper}>
