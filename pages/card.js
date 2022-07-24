@@ -33,6 +33,7 @@ export default function Card({ avatar_url, bio }) {
                         <h3 className='w-64 text-gray-200'>Web Developer</h3>
                     </div>
                     <div className='flex gap-x-4 justify-center py-2'>
+                        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                         <a
                             href='/api/card'
                             rel='nofollow'
