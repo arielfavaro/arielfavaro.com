@@ -1,5 +1,5 @@
 .wrapper {
-    @apply container py-4 flex items-center justify-center lg:justify-end text-white h-16;
+    @apply container py-4 flex items-center border-b border-gray-500 mb-8 justify-center lg:justify-end text-white h-16;
 }
 
 .links {
