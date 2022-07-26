@@ -17,11 +17,7 @@ export default function Card() {
 
     const canvasQrCodeRef = useRef()
 
-    const handleGenerateQrCode = () => {
-        if (isGeneratedQrCode) {
-            return;
-        }
-
+    const handleGenerateQrCode = (text) => {
         const qrcode_options = {
             errorCorrectionLevel: 'M',
             type: 'image/png',
@@ -31,9 +27,9 @@ export default function Card() {
             // scale: 20,
         }
 
-        const card = generateCard()
-        QRCode.toCanvas(canvasQrCodeRef.current, card, qrcode_options, error => { })
+        QRCode.toCanvas(canvasQrCodeRef.current, text, qrcode_options, error => { })
         canvasQrCodeRef.current.style = {}
+
         setIsGeneratedQrCode(true)
     }
 
@@ -95,12 +91,21 @@ export default function Card() {
                         </Link>
                     </div>
                     <div className='flex flex-col justify-center items-center border-t border-gray-500 py-4 gap-4'>
-                        <button className='rounded-full px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm disabled:opacity-50 disabled:cursor-default'
-                            onClick={handleGenerateQrCode}
-                            disabled={isGeneratedQrCode}
-                        >
-                            Salvar Contato por QrCode
-                        </button>
+                        <h4>Compartilhar com QRCode</h4>
+                        <div className='flex gap-4'>
+                            <button
+                                className='rounded-full px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm'
+                                onClick={() => handleGenerateQrCode(generateCard())}
+                            >
+                                Contato
+                            </button>
+                            <button
+                                className='rounded-full px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm'
+                                onClick={() => handleGenerateQrCode(window.location.href)}
+                            >
+                                Site
+                            </button>
+                        </div>
                         <div className='lg:w-80'>
                             <canvas
                                 className={`max-w-full object-contain object-top ${isGeneratedQrCode ? '' : 'hidden'}`}
