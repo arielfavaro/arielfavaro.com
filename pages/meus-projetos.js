@@ -21,7 +21,7 @@ export default function MeusProjetos() {
                     <CardProject
                         title="GitHub Badges"
                         description="Exibir contagem de visitas em seu repositório no GitHub."
-                        link="http://another-github-badges.ari.dev.br/"
+                        link="https://github.com/arielfavaro/another-github-badges/"
                         icon="github-mark-light-120px-plus.webp"
                     />
                     <CardProjectComingSoon />
