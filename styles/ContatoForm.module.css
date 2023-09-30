@@ -1,0 +1,25 @@
+.submit {
+    @apply bg-primary text-white px-4 py-2 rounded w-full disabled:opacity-50;
+}
+
+.fieldWrapper {
+    @apply flex flex-col relative mb-2;
+
+    input[type="checkbox"] {
+        @apply mr-2;
+    }
+}
+
+.invalid {
+    &, &[type="text"], &[type="email"] {
+        @apply border-red-400 focus:border-red-500 focus:ring-red-500;
+    }
+}
+
+.fieldError {
+    @apply text-red-400 h-3 text-sm;
+}
+
+.fieldRequired {
+    @apply after:content-['*'] after:ml-0.5 after:text-red-500 block text-white;
+}

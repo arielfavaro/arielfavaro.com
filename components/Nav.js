@@ -11,6 +11,9 @@ export default function Nav() {
                 <Link href="/meus-projetos">
                     <a>Meus Projetos</a>
                 </Link>
+                <Link href="/contato">
+                    <a>Contato</a>
+                </Link>
             </div>
         </nav>
     )

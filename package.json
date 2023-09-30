@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^1.5.1",
+    "formik": "^2.4.5",
     "next": "^11.1.2",
     "qrcode": "^1.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
+    "react-text-mask": "^5.5.0",
+    "react-toastify": "^9.1.3",
     "react-tsparticles": "^1.37.2",
-    "vcard-creator": "^0.4.2"
+    "vcard-creator": "^0.4.2",
+    "yup": "^1.3.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
