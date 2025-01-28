@@ -25,6 +25,12 @@ export default function MeusProjetos() {
                         icon="geradorlinkwhatsapp-icon.webp"
                     />
                     <CardProject
+                        title="Creeper Explosion Control"
+                        description="Plugin para Minecraft (servidor Paper > 1.20.6) que permite controlar explosões de Creepers. Ele configura a prevenção de danos a blocos, entidades ou ambos."
+                        link="https://github.com/arielfavaro/creeper-explosion-control"
+                        icon="github-mark-light-120px-plus.webp"
+                    />
+                    <CardProject
                         title="GitHub Badges"
                         description="Exibir contagem de visitas em seu repositório no GitHub."
                         link="https://github.com/arielfavaro/another-github-badges/"
