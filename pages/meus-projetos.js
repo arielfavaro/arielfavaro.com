@@ -13,6 +13,12 @@ export default function MeusProjetos() {
 
                 <div className="flex flex-wrap justify-center gap-4 pt-4 pb-8">
                     <CardProject
+                        title="Códigos Dodo"
+                        description="Comunidade para compartilhamento de Dodo Codes em Animal Crossing New Horizons."
+                        link="https://codigosdodo.com.br/"
+                        icon="codigos-dodo-icon.webp"
+                    />
+                    <CardProject
                         title="Gerador de Link para whats"
                         description="Crie link curto para whats com QR Code de maneira fácil e compartilhe com seus clientes."
                         link="https://app.linkwpp.com/"
@@ -23,12 +29,6 @@ export default function MeusProjetos() {
                         description="Exibir contagem de visitas em seu repositório no GitHub."
                         link="https://github.com/arielfavaro/another-github-badges/"
                         icon="github-mark-light-120px-plus.webp"
-                    />
-                    <CardProject
-                        title="Códigos Dodo"
-                        description="Comunidade para compartilhamento de Dodo Codes em Animal Crossing New Horizons."
-                        link="https://codigosdodo.com.br/"
-                        icon="codigos-dodo-icon.webp"
                     />
                     <CardProjectComingSoon />
                 </div>
