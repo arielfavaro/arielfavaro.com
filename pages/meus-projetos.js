@@ -25,6 +25,12 @@ export default function MeusProjetos() {
                         icon="geradorlinkwhatsapp-icon.webp"
                     />
                     <CardProject
+                        title="Mapa de Bairros"
+                        description="Mapa de bairros da minha cidade. Utilizado dados públicos do IBGE CNEFE. Realizado tratamento e clusterização de dados para criação de geometrias convexhull."
+                        link="https://bairros-porto-ferreira.vercel.app/"
+                        icon="github-mark-light-120px-plus.webp"
+                    />
+                    <CardProject
                         title="Creeper Explosion Control"
                         description="Plugin para Minecraft (servidor Paper > 1.20.6) que permite controlar explosões de Creepers. Ele configura a prevenção de danos a blocos, entidades ou ambos."
                         link="https://github.com/arielfavaro/creeper-explosion-control"
