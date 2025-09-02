@@ -27,7 +27,7 @@ export default function MeusProjetos() {
                     <CardProject
                         title="Mapa de Bairros"
                         description="Mapa de bairros da minha cidade. Utilizado dados públicos do IBGE CNEFE. Realizado tratamento e clusterização de dados para criação de geometrias convexhull."
-                        link="https://bairros-porto-ferreira.vercel.app/"
+                        link="https://bairros.ariel.dev.br/"
                         icon="mapa-bairros.webp"
                     />
                     <CardProject
