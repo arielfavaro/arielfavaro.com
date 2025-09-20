@@ -6,9 +6,9 @@ export default function generateCard() {
     const card = new VCard()
     card.addName('Favaro', 'Ariel')
     card.addJobtitle('Web Developer')
-    card.addEmail('contato@arielfavaro.com')
+    card.addEmail('arieltainan@gmail.com')
     phoneWhatsapp && card.addPhoneNumber(phoneWhatsapp, 'WORK')
-    card.addURL('https://arielfavaro.com', 'WORK')
+    card.addURL('https://ariel.dev.br', 'WORK')
 
     return card.toString()
 }
