@@ -1,7 +1,5 @@
 # Personal Website 👨‍💻
-
-## 🚀🚀🚀
-[arielfavaro.com](https://arielfavaro.com)
+[ariel.dev.br](https://ariel.dev.br)
 
 ## TODO 📌
 - Add page "About me", work experience, skills...
